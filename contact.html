@@ -7,17 +7,18 @@
 
 	<title>Contact | Kendra Krzywicki</title>
 
-	<link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script src="js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 	<!-- Navbar with logo-->
 	<nav class="navbar navbar-default">
-	  <div class="container">
+	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
 	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navHeaderCollapse" aria-expanded="false">
@@ -41,13 +42,38 @@
 	</nav>
 
 	<div class="container">
-		<h1></h1>
-
-		<div class="row">
-			<div class="col-md-12">
-				
+		<div id="main-container" class="row">
+			<!-- Form -->
+			<div class="main-section col-md-8">
+				<h1>Contact</h1>
+				<div class="form-group">
+					<label for="username">Name</label>
+					<input type="text" class="form-control" id="username" placeholder="John Smith">
+				</div>
+				<div class="form-group">
+					<label for="emailinput">Email</label>
+					<input type="email" class="form-control" id="emailinput" placeholder="example@gmail.com">
+				</div>
+				<div class="form-group">
+					<label for="msginput">Message</label>
+					<textarea class="form-control" rows="7"></textarea>
+				</div>
+				<button type="submit" class="btn btn-info">Submit</button>
 			</div>
-		</div>
+			
+			<!-- Empty space -->
+ 			<div class="empty-section col-md-1"></div>
+
+			<!-- Social SideBar -->
+			<div class="sidebar col-xs-12 col-md-3">
+				
+				<h2>Connect with Me</h2>
+
+	         	<a href="https://github.com/gitKendra"><img src="assets/images/icon-github-sm.png" class="social" alt="GitHub" target="_blank"/></a>
+	         	<a href="https://www.linkedin.com/in/kendra-krzywicki-63423057/"><img src="assets/images/icon-linkedin-sm.png" class="social" alt="LinkedIn" target="_blank/"></a>
+	         	<a href="https://stackoverflow.com/users/8242007/kendra"><img src="assets/images/icon-stackoverflow-sm.png" class="social" alt="Stack Overflow" target="_blank"/></a>			
+			</div>
+		</div><!--./row -->
 	</div><!-- ./container -->
 	
 	<!-- Footer -->
@@ -60,6 +86,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="/_assets/js/"></script>
+
 </body>
 </html>
